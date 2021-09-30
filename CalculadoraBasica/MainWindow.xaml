@@ -1,0 +1,24 @@
+﻿<Window x:Class="CalculadoraBasica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculadoraBasica"
+        mc:Ignorable="d"
+        Title="Calculadora" Height="597.321" Width="1016.964" Icon="/assets/128.ico">
+    <Grid>
+        <TextBox x:Name="IntroducirTextBox1" HorizontalAlignment="Left" Height="45" Margin="183,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227"/>
+
+        <Label x:Name="MensajeLabel1" Content="Numero1" HorizontalAlignment="Left" Margin="26,111,0,0" VerticalAlignment="Top" Width="136" FontSize="22" RenderTransformOrigin="0.62,0.486"/>
+        <Label x:Name="MensajeLabel2" Content="Numero2" HorizontalAlignment="Left" Margin="26,174,0,0" VerticalAlignment="Top" Width="136" FontSize="22"/>
+        <Label x:Name="MensajeLabel3" Content="Operador" HorizontalAlignment="Left" Margin="26,224,0,0" VerticalAlignment="Top" Width="136" FontSize="22"/>
+        <Label  x:Name="MensajeLabel4" Content="Resultado" HorizontalAlignment="Left" Margin="26,296,0,0" VerticalAlignment="Top" Width="136" FontSize="22"/>
+        <Button IsDefault="true" x:Name="CalcularButton" Content="Calcular" HorizontalAlignment="Left" Margin="502,145,0,0" VerticalAlignment="Top" Width="209" Height="48" Click="CalcularButon_Click" IsEnabled="False"/>
+        <Button IsCancel="true" x:Name="BorrarButton" Content="Borrar" HorizontalAlignment="Left" Margin="502,267,0,0" VerticalAlignment="Top" Width="209" Height="48" Click="BorrarButton_Click"/>
+
+        <TextBox x:Name="IntroducirTextBox2" HorizontalAlignment="Left" Height="45" Margin="183,168,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227"/>
+        <TextBox x:Name="IntroducirTextBox3" HorizontalAlignment="Left" Height="45" Margin="183,229,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" TextChanged="IntroducirTextBox3_TextChanged"/>
+        <TextBox x:Name="IntroducirTextBox4" HorizontalAlignment="Left" Height="45" Margin="183,296,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227"/>
+
+    </Grid>
+</Window>
